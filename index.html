@@ -58,10 +58,10 @@
                         <div class="header_top_one_inner_left float-left">
                             <div class="header_social_1">
                                 <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                                    <!-- <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li> -->
                                     <li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i>Pinterest</a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                                    <!-- <li><a href="#"><i class="fab fa-pinterest"></i>Pinterest</a></li> -->
+                                    <!-- <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -1414,10 +1414,10 @@
                     <p>Copyright &copy; 2020.Company name All rights reserved.</p>
                 </div>
                 <div class="site-footer__social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://fb.me/inxon.sound"><i class="fab fa-facebook-square"></i></a>
+                    <!-- <a href="#"><i class="fab fa-dribbble"></i></a> -->
+                    <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                 </div>
             </div>
         </div>
@@ -1451,7 +1451,7 @@
                 <p><a href="mailto:needhelp@tripo.com">needhelp@ziston.com</a> <br> <a href="tel:888-999-0000">888 999
                         0000</a></p>
                 <div class="side-menu__social">
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://fb.me/inxon.sound"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-pinterest-p"></i></a>
@@ -1500,7 +1500,30 @@
     <!-- template scripts -->
     <script src="assets/js/theme.js"></script>
 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
 
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="103587325160901"
+     theme_color="#0A7CFF">
+    </div>
 </body>
 
 </html>
