@@ -325,7 +325,7 @@ li {
   height: 45px;
   background: var(--thm-primary);
   position: fixed;
-  bottom: 40px;
+  bottom: 100px;
   right: 40px;
   z-index: 99;
   text-align: center;
